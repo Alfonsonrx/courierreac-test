@@ -1,0 +1,69 @@
+@use 'vars';
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+/*** Button ***/
+.btn {
+  transition: .5s;
+}
+
+.btn.btn-primary {
+  color: #FFFFFF;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50px;
+}
+
+.content {
+  margin-left: 250px;
+  min-height: 100vh;
+  background: #FFFFFF;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .content {
+      width: calc(100% - 250px);
+  }
+
+  .content.open {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .content {
+      width: 100%;
+      margin-left: 0;
+  }
+}

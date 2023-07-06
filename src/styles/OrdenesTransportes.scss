@@ -1,0 +1,15 @@
+@use 'vars';
+
+.ot-section {
+  padding: .5em 1em;
+}
+
+.main-details {
+  border: 2px solid rgba($color: #3c3a3a, $alpha: 0.2);
+}
+
+.tipo-entrega, .forma-pago, .otros {
+  padding: 0.5em;
+  margin-left: 0em;
+  border: 1px solid rgba($color: #3c3a3a, $alpha: 0.2);
+}
