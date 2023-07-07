@@ -13,3 +13,18 @@
   margin-left: 0em;
   border: 1px solid rgba($color: #3c3a3a, $alpha: 0.2);
 }
+
+.row>* {
+  padding: 0 .3em !important;
+}
+.input-group>input, .input-group-text, .input-group>select {
+  padding: 0 .3em !important;
+}
+
+.sel-especie {
+  width: 12% !important;
+}
+
+#otrosCargosTextArea{
+  max-height: 6em;
+}

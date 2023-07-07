@@ -38,7 +38,7 @@ const TransportOrder = () => {
             </label>
             <div className="input-group">
               <input
-                type="text"
+                type="date"
                 className="form-control"
                 id="basic-url"
                 aria-describedby="basic-addon3 basic-addon4"
@@ -420,59 +420,57 @@ const TransportOrder = () => {
             tabIndex={0}
           >
             <div className="row mx-2 mt-2">
-              <div>
-                <div className="row mb-2">
-                  <div className="col-2">
-                    <label for="basic-url" className="form-label">
-                      Documento
-                    </label>
-                    <div className="input-group mb-3">
-                      <select className="form-select" id="inputGroupSelect02">
-                        <option selected>Choose...</option>
-                        <option value={1}>Cta. Cte.</option>
-                        <option value={2}>Two</option>
-                        <option value={3}>Three</option>
-                      </select>
-                    </div>
+              <div className="row mb-2">
+                <div className="col-2">
+                  <label for="basic-url" className="form-label">
+                    Documento
+                  </label>
+                  <div className="input-group mb-3">
+                    <select className="form-select" id="inputGroupSelect02">
+                      <option selected>Choose...</option>
+                      <option value={1}>Cta. Cte.</option>
+                      <option value={2}>Two</option>
+                      <option value={3}>Three</option>
+                    </select>
                   </div>
-                  <div className="col-2">
-                    <label for="basic-url" className="form-label">
-                      Tipo
-                    </label>
-                    <div className="input-group mb-3">
-                      <select className="form-select" id="inputGroupSelect02">
-                        <option selected>Choose...</option>
-                        <option value={1}>Cta. Cte.</option>
-                        <option value={2}>Two</option>
-                        <option value={3}>Three</option>
-                      </select>
-                    </div>
+                </div>
+                <div className="col-2">
+                  <label for="basic-url" className="form-label">
+                    Tipo
+                  </label>
+                  <div className="input-group mb-3">
+                    <select className="form-select" id="inputGroupSelect02">
+                      <option selected>Choose...</option>
+                      <option value={1}>Cta. Cte.</option>
+                      <option value={2}>Two</option>
+                      <option value={3}>Three</option>
+                    </select>
                   </div>
-                  <div className="col-2">
-                    <label for="basic-url" className="form-label">
-                      Numero
-                    </label>
-                    <div className="input-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="basic-url"
-                        aria-describedby="basic-addon3 basic-addon4"
-                      />
-                    </div>
+                </div>
+                <div className="col-2">
+                  <label for="basic-url" className="form-label">
+                    Numero
+                  </label>
+                  <div className="input-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="basic-url"
+                      aria-describedby="basic-addon3 basic-addon4"
+                    />
                   </div>
-                  <div className="col-2">
-                    <label for="basic-url" className="form-label">
-                      Monto
-                    </label>
-                    <div className="input-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="basic-url"
-                        aria-describedby="basic-addon3 basic-addon4"
-                      />
-                    </div>
+                </div>
+                <div className="col-2">
+                  <label for="basic-url" className="form-label">
+                    Monto
+                  </label>
+                  <div className="input-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="basic-url"
+                      aria-describedby="basic-addon3 basic-addon4"
+                    />
                   </div>
                 </div>
               </div>
@@ -490,38 +488,12 @@ const TransportOrder = () => {
             aria-labelledby="nav-profile-tab"
             tabIndex={0}
           >
-            <div className="row mx-2 mt-2">
-              <div>
-                <div className="row mb-2">
-                  <div className="col-2">
+            <div className="row">
+              <div className="col-9">
+                <div className="row my-2">
+                  <div className="col">
                     <label for="basic-url" className="form-label">
-                      Documento
-                    </label>
-                    <div className="input-group mb-3">
-                      <select className="form-select" id="inputGroupSelect02">
-                        <option selected>Choose...</option>
-                        <option value={1}>Cta. Cte.</option>
-                        <option value={2}>Two</option>
-                        <option value={3}>Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="col-2">
-                    <label for="basic-url" className="form-label">
-                      Tipo
-                    </label>
-                    <div className="input-group mb-3">
-                      <select className="form-select" id="inputGroupSelect02">
-                        <option selected>Choose...</option>
-                        <option value={1}>Cta. Cte.</option>
-                        <option value={2}>Two</option>
-                        <option value={3}>Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="col-2">
-                    <label for="basic-url" className="form-label">
-                      Numero
+                      Bultos
                     </label>
                     <div className="input-group">
                       <input
@@ -532,9 +504,9 @@ const TransportOrder = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-2">
+                  <div className="col">
                     <label for="basic-url" className="form-label">
-                      Monto
+                      Kg
                     </label>
                     <div className="input-group">
                       <input
@@ -544,16 +516,206 @@ const TransportOrder = () => {
                         aria-describedby="basic-addon3 basic-addon4"
                       />
                     </div>
+                  </div>
+                  <div className="col">
+                    <label for="basic-url" className="form-label">
+                      Alto
+                    </label>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <label for="basic-url" className="form-label">
+                      Ancho
+                    </label>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <label for="basic-url" className="form-label">
+                      Largo
+                    </label>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-1 sel-especie">
+                    <label for="basic-url" className="form-label">
+                      Especie
+                    </label>
+                    <div className="input-group mb-3">
+                      <select className="form-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value={1}>Caja</option>
+                        <option value={2}>Carta</option>
+                        <option value={3}>Sobre</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <label for="basic-url" className="form-label">
+                      Dice Contener
+                    </label>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <label for="basic-url" className="form-label">
+                      M<sup>2</sup>
+                    </label>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-1">
+                    <label for="basic-url" className="form-label">
+                      K cobro
+                    </label>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-1">
+                    <label for="basic-url" className="form-label">
+                      Total $
+                    </label>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3 basic-addon4"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-1">
+                    <button type="button" class="btn btn-primary p-3">
+                      <i
+                        class="bi bi-download"
+                        style={{ fontSize: 1.3 + "em" }}
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+                <div className="row">
+                  <div style={{ minHeight: 11 + "em" }}>
+                    <DataGrid columns={columns} rows={[]} />
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div style={{ minHeight: 10 + "em" }}>
-                <DataGrid columns={columns} rows={[]} />
+              <div className="col m-3">
+                <div className="mb-1 row">
+                  <label htmlFor="inputPassword" className="col">
+                    Sub Total
+                  </label>
+                  <div className="col-6">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="inputPassword"
+                    />
+                  </div>
+                </div>
+                <div className="mb-1 row">
+                  <label htmlFor="inputPassword" className="col">
+                    % Descuento
+                  </label>
+                  <div className="col-6">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="inputPassword"
+                    />
+                  </div>
+                </div>
+                <div className="mb-1 row">
+                  <label htmlFor="inputPassword" className="col">
+                    Otras Comunas
+                  </label>
+                  <div className="col-6">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="inputPassword"
+                    />
+                  </div>
+                </div>
+                <div className="mb-1 row">
+                  <label htmlFor="inputPassword" className="col">
+                    Otros Cargos
+                  </label>
+                  <div className="col-6">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="inputPassword"
+                    />
+                  </div>
+                </div>
+                <div className="mb-1">
+                  <label htmlFor="otrosCargosTextArea" className="form-label">
+                    Glosa Otros Cargos
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="otrosCargosTextArea"
+                    rows={2}
+                    defaultValue={""}
+                  />
+                </div>
               </div>
             </div>
+            <div className="row"></div>
           </div>
+        </div>
+      </div>
+      <div className="ot-section opciones-btn">
+        <div className="d-grid gap-2 d-flex justify-content-center mx-auto">
+          <button className="btn btn-primary" type="button">
+            Anular
+          </button>
+          <button className="btn btn-primary" type="button">
+            Imprimir
+          </button>
+          <button className="btn btn-primary" type="button">
+            Aceptar
+          </button>
+          <button className="btn btn-primary" type="button">
+            Cerrar
+          </button>
         </div>
       </div>
     </div>
